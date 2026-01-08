@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-deployment
 spec:
-  replicas: 7
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 978163710174.dkr.ecr.us-west-1.amazonaws.com/shammutest:latest
+        image: 574070665112.dkr.ecr.eu-west-2.amazonaws.com/practiceproject:latest
         ports:
         - containerPort: 80
 ---
