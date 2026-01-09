@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: netflix
-        image: 574070665112.dkr.ecr.us-east-2.amazonaws.com/devopsshack-image:latest
+        image: shammu101/cycle
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -28,5 +28,5 @@ spec:
     app: netflix  # This should match the labels of your Deployment
   ports:
     - port: 80       # Port that the service will expose
-      targetPort: 8080 # Port on the pod that the service should forward traffic to
+      targetPort: 80 # Port on the pod that the service should forward traffic to
       nodePort: 31111
