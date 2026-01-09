@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 574070665112.dkr.ecr.eu-west-2.amazonaws.com/proj3-image-prac:latest
+        image: 574070665112.dkr.ecr.us-east-2.amazonaws.com/devopsshack-image:latest
         ports:
         - containerPort: 80
 ---
